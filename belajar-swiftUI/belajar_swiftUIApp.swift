@@ -1,17 +1,16 @@
-//
-//  belajar_swiftUIApp.swift
-//  belajar-swiftUI
-//
-//  Created by ellfarnaz on 30/06/24.
-//
-
 import SwiftUI
 
 @main
-struct belajar_swiftUIApp: App {
+struct MySwiftUIAppApp: App {
+    @State private var isSplashScreenActive = true
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            if isSplashScreenActive {
+                SplashScreenView(isSplashScreenActive: $isSplashScreenActive)
+            } else {
+                MainView()
+            }
         }
     }
 }

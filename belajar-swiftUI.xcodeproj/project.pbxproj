@@ -11,6 +11,11 @@
 		1F64B8012C30A1B600123A80 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F64B8002C30A1B600123A80 /* ContentView.swift */; };
 		1F64B8032C30A1B900123A80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F64B8022C30A1B900123A80 /* Assets.xcassets */; };
 		1F64B8062C30A1B900123A80 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F64B8052C30A1B900123A80 /* Preview Assets.xcassets */; };
+		1F93EE4F2C31CB2B00B00C06 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F93EE4E2C31CB2B00B00C06 /* SplashScreenView.swift */; };
+		1F93EE512C31CB4E00B00C06 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F93EE502C31CB4E00B00C06 /* MainView.swift */; };
+		1F93EE532C31D5AE00B00C06 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F93EE522C31D5AE00B00C06 /* WelcomeView.swift */; };
+		1F93EE572C31D61200B00C06 /* RegisterViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F93EE562C31D61200B00C06 /* RegisterViews.swift */; };
+		1F93EE672C31E8BD00B00C06 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F93EE662C31E8BD00B00C06 /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		1F64B8002C30A1B600123A80 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1F64B8022C30A1B900123A80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F64B8052C30A1B900123A80 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1F93EE4E2C31CB2B00B00C06 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
+		1F93EE502C31CB4E00B00C06 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		1F93EE522C31D5AE00B00C06 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		1F93EE562C31D61200B00C06 /* RegisterViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViews.swift; sourceTree = "<group>"; };
+		1F93EE662C31E8BD00B00C06 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginView.swift; path = ../../LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +63,7 @@
 			children = (
 				1F64B7FE2C30A1B600123A80 /* belajar_swiftUIApp.swift */,
 				1F64B8002C30A1B600123A80 /* ContentView.swift */,
+				1F93EE4D2C31CAF400B00C06 /* Views */,
 				1F64B8022C30A1B900123A80 /* Assets.xcassets */,
 				1F64B8042C30A1B900123A80 /* Preview Content */,
 			);
@@ -65,6 +76,18 @@
 				1F64B8052C30A1B900123A80 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1F93EE4D2C31CAF400B00C06 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1F93EE662C31E8BD00B00C06 /* LoginView.swift */,
+				1F93EE4E2C31CB2B00B00C06 /* SplashScreenView.swift */,
+				1F93EE502C31CB4E00B00C06 /* MainView.swift */,
+				1F93EE522C31D5AE00B00C06 /* WelcomeView.swift */,
+				1F93EE562C31D61200B00C06 /* RegisterViews.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +160,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F93EE532C31D5AE00B00C06 /* WelcomeView.swift in Sources */,
 				1F64B8012C30A1B600123A80 /* ContentView.swift in Sources */,
+				1F93EE572C31D61200B00C06 /* RegisterViews.swift in Sources */,
+				1F93EE512C31CB4E00B00C06 /* MainView.swift in Sources */,
 				1F64B7FF2C30A1B600123A80 /* belajar_swiftUIApp.swift in Sources */,
+				1F93EE672C31E8BD00B00C06 /* LoginView.swift in Sources */,
+				1F93EE4F2C31CB2B00B00C06 /* SplashScreenView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +308,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,6 +338,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
